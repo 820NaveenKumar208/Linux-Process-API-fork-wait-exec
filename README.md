@@ -1,7 +1,6 @@
 # NAME : NAVEEN KUMAR T
 # REG NO : 212223220067
 # Linux-Process-API-fork-wait-exec-
-Ex02-Linux Process API-fork(), wait(), exec()
 # Ex02-OS-Linux-Process API - fork(), wait(), exec()
 Operating systems Lab exercise
 
@@ -25,8 +24,12 @@ Test the C Program for the desired output.
 
 # PROGRAM:
 
-## C Program to print process ID and parent Process ID using Linux API system calls:
-```
+Developed by :  NAVEEN KUMAR T 
+
+Register Number : 212223220067
+
+## C Program to print process ID and parent Process ID using Linux API system calls
+~~~
 #include <stdio.h>
 #include <sys/types.h>
 #include <unistd.h>
@@ -45,12 +48,13 @@ int main(void)
 	printf("The process id: %d\n",process_id);
 	printf("The process id of parent function: %d\n",p_process_id);
 	return 0; }
-```
-## OUTPUT:
-![325572934-1dc40bf2-ec80-40a9-b5e8-77240bc47982](https://github.com/user-attachments/assets/95b2ce00-386f-442f-b47d-795e3895f482)
+~~~
 
-## C Program to create new process using Linux API system calls fork() and exit():
-```
+## OUTPUT
+![322059149-fc4a585f-bf4c-46e2-8b28-bf0834b838b5](https://github.com/04Varsha/Linux-Process-API-fork-wait-exec/assets/149035374/277a5ef9-b0c2-4e5b-ad59-4a415db2c31c)
+
+## C Program to create new process using Linux API system calls fork() and exit()
+~~~
 #include <stdio.h>
 #include<stdlib.h>
 int main()
@@ -63,14 +67,16 @@ exit(0); }
 else{ 
 printf("I am parent, my pid is %d\n",getpid()); 
 sleep(100); 
-exit(0);} }
-```
-## OUTPUT:
-![325573002-54183136-0e0f-4462-99c5-c89d790770e2](https://github.com/user-attachments/assets/586647eb-dbf9-418c-9187-491364c62fde)
+exit(0);} 
+}
+~~~
+
+## OUTPUT
+
+![322059342-77e05b6f-d0c2-43ee-be5c-16bd0e20cd63](https://github.com/04Varsha/Linux-Process-API-fork-wait-exec/assets/149035374/88cf0f5e-c8fc-4341-b71a-c87c6979fdf1)
 
 ## C Program to execute Linux system commands using Linux API system calls exec() family
-
-```
+~~~
 #include <unistd.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -79,12 +85,13 @@ int main()
 	printf("Running ps with execlp\n");
 	execlp("ps", "ps", "ax", NULL);
 	printf("Done.\n");
-	exit(0);}
-```
+	exit(0);
+}
+~~~
 
-##  OUTPUT:
-![325573029-f2267de0-50d9-48a0-814e-5d5ff8175b1d](https://github.com/user-attachments/assets/f102a1fd-4a7d-4f29-95ff-07661b1622c8)
+## OUTPUT
 
+![322059755-ef1d3f60-fadd-482f-86ea-bbf59756cf8b](https://github.com/04Varsha/Linux-Process-API-fork-wait-exec/assets/149035374/1842c773-69d6-4a4d-9e90-fd5f92813952)
 
 # RESULT:
 The programs are executed successfully.
